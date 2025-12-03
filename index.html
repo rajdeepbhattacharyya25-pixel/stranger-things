@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stranger Things 5 | The Other Side Returns</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'st-red': '#D41B2B',
+              'st-black': '#000000',
+              'st-dark-blue': '#101822',
+            },
+            fontFamily: {
+              'headline': ['"Bebas Neue"', 'sans-serif'],
+              'body': ['"Inter"', 'sans-serif'],
+            },
+            backgroundImage: {
+              'fog-pattern': "url('https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/img/fog1.png')",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #000;
+        color: #fff;
+        overflow-x: hidden;
+      }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #D41B2B; 
+      }
+
+      /* Text Glow Utilities */
+      .text-glow-red {
+        text-shadow: 0 0 10px rgba(212, 27, 43, 0.7), 0 0 20px rgba(212, 27, 43, 0.5);
+      }
+      .text-glow-chromatic {
+        text-shadow: -2px 0 rgba(0, 255, 255, 0.4), 2px 0 rgba(212, 27, 43, 0.4);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "gsap": "https://aistudiocdn.com/gsap@^3.13.0",
+    "gsap/": "https://aistudiocdn.com/gsap@^3.13.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
